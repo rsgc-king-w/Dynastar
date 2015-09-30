@@ -8,8 +8,9 @@ size(170, 244);
 //Left Upper line
 fill(183,200,204);
 beginShape();
-vertex(10, 50);
+vertex(10, 50); //
 vertex(85, 30);
+
 curveVertex(-10, 60);
 curveVertex(95, 25);
 
@@ -47,3 +48,7 @@ vertex(150,140);
 vertex(85, 160);
 curveVertex(155,145);
 vertex(85, 160);
+
+
+
+//Inside
