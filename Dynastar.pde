@@ -16,6 +16,7 @@ void draw() {
 
 
   // start the shape
+  fill(127);
   beginShape();
   
 
@@ -35,32 +36,11 @@ void draw() {
   curveVertex(160, 50); // Middle Vertex
   curveVertex(180, 60); // Middle handle vertex
   
-  
-  // end the shape
-  endShape();
 
- // Start Shape
- beginShape();
- 
- //left line
-curveVertex(45,40);
-curveVertex(10,50);
-curveVertex(20,140);
-curveVertex(100,242);
 
-vertex(20,140);
+vertex(160, 50);
 
-//left lower line 
-curveVertex(15,-20);
-curveVertex(20,140);
-curveVertex(85,210);
-curveVertex(100,140);
 
-//End Shape
-endShape();
-
-//start shape
-beginShape();
 
 //right line
 curveVertex(125,40);
@@ -76,7 +56,30 @@ curveVertex(150,140);
 curveVertex(85,210);
 curveVertex(70,130);
 
+vertex(85, 210);
+
+//left lower line 
+curveVertex(100,140);
+curveVertex(85,210);
+curveVertex(20,140);
+curveVertex(15,-20);
+
+vertex(20,140);
+
+ //left line
+curveVertex(45,40);
+curveVertex(10,50);
+curveVertex(20,140);
+curveVertex(100,242);
+
+vertex(20,140);
+
 endShape();
+
+
+
+
+
 
 
 //Middle Logo
