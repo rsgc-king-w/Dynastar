@@ -30,8 +30,8 @@ void draw() {
   vertex(85, 30);
   
   // right upper line
-  curveVertex(50, 60); // Left handle vertex
-  curveVertex(85, 30); // Left Vertex
+  curveVertex(50, 60); // Right handle vertex
+  curveVertex(85, 30); // Right Vertex
   curveVertex(160, 50); // Middle Vertex
   curveVertex(180, 60); // Middle handle vertex
   
@@ -46,16 +46,17 @@ void draw() {
 curveVertex(45,40);
 curveVertex(10,50);
 curveVertex(20,140);
-curveVertex(100,170);
+curveVertex(100,242);
 
 vertex(20,140);
 
 //left lower line 
-curveVertex(15,85);
+curveVertex(15,-20);
 curveVertex(20,140);
-curveVertex(85,190);
-curveVertex(100,200);
+curveVertex(85,210);
+curveVertex(100,140);
 
+//End Shape
 endShape();
 
 //start shape
@@ -65,47 +66,82 @@ beginShape();
 curveVertex(125,40);
 curveVertex(160,50);
 curveVertex(150,140);
-curveVertex(70,110);
+curveVertex(70,284);
 
 vertex(150,140);
 
 //Right lower line
-curveVertex(155,85);
+curveVertex(155,-20);
 curveVertex(150,140);
-curveVertex(85,190);
-curveVertex(70,200);
+curveVertex(85,210);
+curveVertex(70,130);
 
 endShape();
 
-  ////Left Lower Line
-  //beginShape();
-  //vertex(10, 50); // Left upper Vertex
-  //vertex(20, 140); // Left lower Vertex
-  //curveVertex(5, 30); // Upper Handle 
-  //curveVertex(30, 170); // Lower Handle
-  //endShape();
 
-  ////Right Lower Line
-  //beginShape();
-  //vertex(160, 50); // Right upper Vertex
-  //vertex(150, 140); // Right lower Vertex
-  //curveVertex(165, 30); // Upper Handle 
-  //curveVertex(140, 110); // Lower Handle
-  //endShape();
+//Middle Logo
+beginShape();
 
-  ////Left Base Line
-  //beginShape();
-  //vertex(20,140); //Left lower Vertex 
-  //vertex(85, 160); //Left Middle Vertex
-  //curveVertex(15,135); // Left lower Handle
-  //curveVertex(90,170); // Left Middle Handle
-  //endShape();
+//lower left line
+curveVertex(200,165);
+curveVertex(130,150);
+curveVertex(85,110);
+curveVertex(95,80);
 
-  ////Right Base Line
-  //beginShape();
-  //vertex(150,140); // Right Lower Vertex
-  //vertex(85, 160); // Right Middle Vertex
-  //curveVertex(155,145); // Right lower Handle
-  //curveVertex(75, 155); // Right Middle Handle
-  //endShape();
+endShape();
+
+
+beginShape();
+
+//lower right line 
+curveVertex(-30,165);
+curveVertex(40,150);
+curveVertex(85,110);
+curveVertex(75,80);
+
+endShape();
+
+beginShape();
+
+//Right to top line
+curveVertex(150,170);
+curveVertex(130,150);
+curveVertex(85,60);
+curveVertex(90,40);
+
+endShape();
+
+beginShape();
+//Left to top line
+curveVertex(30,130);
+curveVertex(40,150);
+curveVertex(85,60);
+curveVertex(80,40);
+
+endShape();
+
+//Line from middle
+beginShape();
+
+vertex(85,60);
+vertex(85,110);
+
+endShape();
+
+
+// interior left line
+beginShape();
+curveVertex(200,165);
+curveVertex(130,150);
+curveVertex(85,95);
+curveVertex(95,65);
+endShape();
+
+//interior Right Line
+beginShape();
+curveVertex(-30,165);
+curveVertex(40,150);
+curveVertex(85,95);
+curveVertex(95,45);
+endShape();
 }
