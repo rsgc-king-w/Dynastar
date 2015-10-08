@@ -16,7 +16,7 @@ void draw() {
 
 
   // start the shape
-  fill(127);
+  fill(245,120,17);
   beginShape();
   
 
@@ -67,12 +67,13 @@ curveVertex(15,-20);
 vertex(20,140);
 
  //left line
+ curveVertex(100,242);
+ curveVertex(20,140);
+ curveVertex(10,50);
 curveVertex(45,40);
-curveVertex(10,50);
-curveVertex(20,140);
-curveVertex(100,242);
 
-vertex(20,140);
+
+vertex(10,50);
 
 endShape();
 
@@ -83,6 +84,8 @@ endShape();
 
 
 //Middle Logo
+fill(0);
+
 beginShape();
 
 //lower left line
